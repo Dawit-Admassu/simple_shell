@@ -1,26 +1,29 @@
 #include "shell.h"
 
 /**
- * _strcpy - Copies the string src to dest
- * @dest: Destiny pointer
- * @src: String source
+ * _strncpy - Ccpoies a string
+ * @dest: String to wich chars are going to be copied
+ * @src: String to be copied
+ * @n: Num of chars to copy from src
  *
  * Return: Pointer to dest
  */
-char *_strcpy(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
-	char *mem_address;
+	int count = 0;
+	char *start = dest;
 
-	mem_address = dest;
-
-	while (*src != '\0')
+	while (*src != '\0' && count < n)
 	{
-		*mem_address = *src;
-		mem_address++;
-		src++;
+		*(start++) = *(src++);
+		count++;
 	}
 
-	*mem_address = '\0';
+	while (count < n)
+	{
+		*(start++) = '\0';
+		count++;
+	}
 
 	return (dest);
 }
