@@ -1,10 +1,10 @@
 .TH simple_shell "10 May 2022" "V1.0" "simple_shell man page"
-.SH NAME				
-.B simple_shell - Simple Unix comand interpreter	
-simple_shell: the shell or command interpreter is the computer program 
+.SH NAME
+.B simple_shell - Simple Unix comand interpreter
+simple_shell: the shell or command interpreter is the computer program
 that provides a user interface to access the services of the operating system.
 
-.SH SYNOPSYS				
+.SH SYNOPSYS
 .B #include \fB"shell.h"
 
 ./hsh
@@ -12,8 +12,8 @@ that provides a user interface to access the services of the operating system.
 [command] [option]
 
 .SH DESCRIPTION
-Shell is a user interface to use the services of a computer. 
-It can be a command-line interface –the one we will build- or graphical user interface, 
+Shell is a user interface to use the services of a computer.
+It can be a command-line interface –the one we will build- or graphical user interface,
 like regular software such as Windows Office.
 
 .SH EXAMPLES
@@ -35,7 +35,7 @@ $  ls -l
 -rw-r--r-- 1 abel 22691  754 may 10 11:14 f_error.c
 -rw-r--r-- 1 abel 22691 1372 may 10 11:15 f_exit.c
 
-.SH AUTHOR'S				
+.SH AUTHOR'S
 -Written by Abel Yitages <abelyitages10@gmail.com> and Nebil Abdulfetah <nebilabdu300@gmail.com>
 
 .SH BUGS
